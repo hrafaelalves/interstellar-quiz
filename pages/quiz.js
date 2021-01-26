@@ -20,7 +20,7 @@ export default function Quiz(){
                 <link rel="canonical" href={db.canonical} />
                 <meta property="og:locale" content="pt_BR" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Interstellar Quiz" />
+                <meta property="og:title" content="Interstellar Quiz" key="title"/>
                 <meta property="og:description" content="Nós sempre nos definimos pela capacidade de superar o impossível." />
                 <meta property="og:url" content={db.canonical} />
                 <meta property="og:site_name" content="Interstellar Quiz" />
