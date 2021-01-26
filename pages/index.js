@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import styled from 'styled-components'
 import db from '../db.json';
 
@@ -21,28 +23,42 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   return (
-    <QuizBackground backgroundImage={db.bg}>
-      <QuizContainer>
-        <QuizLogo logo={db.logo2} />
-        <Widget>
-          <Widget.Header>
-            <h1>{db.title}</h1>
-          </Widget.Header>
-          <Widget.Content>
-            <p>{db.description}</p>
-          </Widget.Content>
-        </Widget>
+    <>
+      <Head>
+          <title>Interstellar Quiz - Home</title>
+          <meta property="og:title" content="My page title" key="title" />
+          <link rel="canonical" href="" />
+          <meta property="og:locale" content="pt_BR" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={db.title} />
+          <meta property="og:description" content={db.description} />
+          <meta property="og:url" content="" />
+          <meta property="og:site_name" content="Mix Fiscal" />
+      </Head>
 
-        <Widget>
-          <Widget.Content>
-            <h1>Quizes da Galera</h1>
+      <QuizBackground backgroundImage={db.bg}>
+        <QuizContainer>
+          <QuizLogo logo={db.logo2} />
+          <Widget>
+            <Widget.Header>
+              <h1>{db.title}</h1>
+            </Widget.Header>
+            <Widget.Content>
+              <p>{db.description}</p>
+            </Widget.Content>
+          </Widget>
 
-            <p>lorem ipsum dolor sit amet...</p>
-          </Widget.Content>
-        </Widget>
-        <Footer />
-      </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/hrafaelalves" />
-    </QuizBackground>
+          <Widget>
+            <Widget.Content>
+              <h1>Quizes da Galera</h1>
+
+              <p>lorem ipsum dolor sit amet...</p>
+            </Widget.Content>
+          </Widget>
+          <Footer />
+        </QuizContainer>
+        <GitHubCorner projectUrl="https://github.com/hrafaelalves" />
+      </QuizBackground>
+    </>
   );
 }
