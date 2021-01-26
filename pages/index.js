@@ -26,7 +26,6 @@ export default function Home() {
     <>
       <Head>
           <title>Interstellar Quiz - Home</title>
-          <meta property="og:title" content="My page title" key="title" />
           <link rel="canonical" href={db.canonical} />
           <meta property="og:locale" content="pt_BR" />
           <meta property="og:type" content="website" />

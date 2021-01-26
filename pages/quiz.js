@@ -17,7 +17,6 @@ export default function Quiz(){
         <>
             <Head>
                 <title>Interstellar Quiz - Quiz Page</title>
-                <meta property="og:title" content="My page title" key="title" />
                 <link rel="canonical" href={db.canonical} />
                 <meta property="og:locale" content="pt_BR" />
                 <meta property="og:type" content="website" />
