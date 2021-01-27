@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 function Logo({ className, logo }) {
   return (
-    <img src={logo} className={className}/>
+    <img src={logo} className={className} />
   );
 }
 
